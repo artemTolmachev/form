@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="form">
+        <div class="form-left-decoration"></div>
+        <div class="form-right-decoration"></div>
+        <div class="circle"></div>
+        <div class="form-inner">
+        <!-- скрытое поле куда будет отправляться письмо -->
+        <input type="hidden" name="admin_email[]" value="lidama65@mail.ua">
+        <!-- скрытое поле темы письма -->
+        <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+        <input type="text" name="fio" placeholder="Name" data-validate-field="fio">
+        <input type="email" name="email" placeholder="email" data-validate-field="email">
+        <input type="tel" name="tel" placeholder="tel" data-validate-field="tel">
+        <textarea placeholder="Сообщение..." name="mas" rows="3"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+    <script src="just-validate.min.js"></script>
+    <script src="inputmask.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
